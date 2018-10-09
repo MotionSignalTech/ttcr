@@ -9,3 +9,5 @@ test_lelievre11.py
 ttcr_matlab/*.mex*
 xcuserdata/
 
+.cproject
+.project
