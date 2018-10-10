@@ -11,3 +11,18 @@ xcuserdata/
 
 .cproject
 .project
+.pydevproject
+
+
+CMakeCache.txt
+*Makefile
+*cmake_install.cmake
+*CMakeFiles/
+install_manifest.txt
+
+ttcr/ttcr2d
+ttcr/ttcr2ds
+ttcr/ttcr3d
+
+examples/model2d*.vtp
+examples/model2d*.dat
