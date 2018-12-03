@@ -26,3 +26,4 @@ ttcr/ttcr3d
 
 examples/model2d*.vtp
 examples/model2d*.dat
+/.settings/

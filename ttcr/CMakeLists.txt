@@ -35,7 +35,8 @@ add_definitions(-DVTK)
 #########################################
 # Building 
 
-set(CMAKE_CXX_FLAGS "-std=c++11 -march=native")
+#set(CMAKE_CXX_FLAGS "-std=c++11 -march=native")
+set(CMAKE_CXX_FLAGS "-std=c++11")
 
 set( ttcr3d_SRCS ttcr3d.cpp ttcr_io.cpp )
 set( ttcr2d_SRCS ttcr2d.cpp ttcr_io.cpp )
