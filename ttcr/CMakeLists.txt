@@ -8,18 +8,18 @@ INCLUDE_DIRECTORIES ( "${EIGEN3_INCLUDE_DIR}" )
 #########################################
 # Find Boost
 
-set(Boost_USE_STATIC_LIBS OFF)
-set(Boost_USE_MULTITHREADED ON)
-set(Boost_USE_STATIC_RUNTIME OFF)
+#set(Boost_USE_STATIC_LIBS OFF)
+#set(Boost_USE_MULTITHREADED ON)
+#set(Boost_USE_STATIC_RUNTIME OFF)
 
-find_package(Boost 1.58.0 REQUIRED)
+#find_package(Boost 1.58.0 REQUIRED)
 
-if(NOT Boost_FOUND)
-    MESSAGE(FATAL_ERROR "Unable to find correct Boost version. Did you set BOOST_ROOT?")
-endif()
+#if(NOT Boost_FOUND)
+#    MESSAGE(FATAL_ERROR "Unable to find correct Boost version. Did you set BOOST_ROOT?")
+#endif()
 
-include_directories("${Boost_INCLUDE_DIRS}")
-message(STATUS "Boost_LIBRARIES = ${Boost_LIBRARIES}")
+#include_directories("${Boost_INCLUDE_DIRS}")
+#message(STATUS "Boost_LIBRARIES = ${Boost_LIBRARIES}")
 
 #########################################
 # Find VTK
@@ -36,7 +36,7 @@ add_definitions(-DVTK)
 # Building 
 
 #set(CMAKE_CXX_FLAGS "-std=c++11 -march=native")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++11 -pthread")
 
 set( ttcr3d_SRCS ttcr3d.cpp ttcr_io.cpp )
 set( ttcr2d_SRCS ttcr2d.cpp ttcr_io.cpp )
